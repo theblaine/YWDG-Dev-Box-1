@@ -24,7 +24,9 @@ With this VagrantFile you get some of my favorite and most used tools including:
 - Clone this Repo (git clone git://github.com/abrahamcuenca/YWDG-Dev-Box.git)
 - Run: vagrant up
 - Run: vagrant ssh
+- 
 ---
+
 ### Basic Vagrant Commands
 
 > Start Server:  <br/> vagrant up
@@ -41,13 +43,16 @@ _Note: Both Node.js and Rails use port 3000 you cannot run both simultanously wi
 - Vagrant Box:80 -> Host:8888 (used by PHP)
 - Vagrant Box:3000 -> Host:3000 (used by either NodeJS or RubyOnRails)
 - Vagrant Box:5000 -> Host:5000 (used by Flask)
-- Vagrant Box:3306 -> Host:3306 (used by MySQL) !
-- Vagrant Box:27017 -> Host:27107 (used by MongoDB) !
-- Vagrant Box:27017 -> Host:5432 (used by MongoDB) !
+- Vagrant Box:3306 -> Host:3306 (used by MySQL) *
+- Vagrant Box:27017 -> Host:27107 (used by MongoDB) *
+- Vagrant Box:27017 -> Host:5432 (used by MongoDB) *
+
 ---
+
 ### Todo:
+
 1. Split puppet file into modules
 2. clean up code
-3. ! Bind Mongodb from 127.0.0.1 to 0.0.0.0 to allow external connections
-4. ! Bind MySQL from 127.0.0.1 to 0.0.0.0 to allow external connections
-5. ! Bind PostgreSQL from 127.0.0.1 to 0.0.0.0 to allow external connections
+3.  * Bind Mongodb from 127.0.0.1 to 0.0.0.0 to allow external connections
+4.  * Bind MySQL from 127.0.0.1 to 0.0.0.0 to allow external connections
+5.  * Bind PostgreSQL from 127.0.0.1 to 0.0.0.0 to allow external connections
